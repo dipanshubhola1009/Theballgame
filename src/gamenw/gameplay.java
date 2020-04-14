@@ -274,7 +274,7 @@ public void keyPressed(KeyEvent e) {
 	{
 		    NewMap=new brickmaker(row,col);
 		    score=0;
-		    no_tiles=0;
+		    no_tiles=row*col;
 			play=true;
 		
 	}
