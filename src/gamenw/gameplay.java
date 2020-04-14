@@ -274,12 +274,14 @@ public void keyPressed(KeyEvent e) {
 	{
 		    NewMap=new brickmaker(row,col);
 		    score=0;
+		    no_tiles=0;
 			play=true;
 		
 	}
 	if(e.getKeyCode()==KeyEvent.VK_ENTER) {
 		row+=2;
 		col+=3;
+		no_tiles=row*col;
 		NewMap = new brickmaker(row,col);
 		win=false;
 		repaint();
